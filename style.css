@@ -1,0 +1,91 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background:rgba(0.0.0.0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+video
+{
+    position: absolute;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+}
+
+.box
+{
+    width: 30px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+    background: black;
+    transition: .5s;
+    overflow: hidden;
+    border-radius: 18px;
+ 
+}
+.box:hover
+{
+    height: 490px;
+    width: 300px;
+}
+.box .imgbx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180%;
+    box-sizing: border-box;
+    background: linear-gradient(225deg, #89ff00,);
+   border-radius: 18px;
+   
+}
+
+.box .content
+{
+    position: absolute;
+    width: 350px;
+   padding-right: 5px;
+    top: 400px;
+    height: 90px;
+    background:linear-gradient(50deg,green,blue,red,red);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    opacity: 1;
+    transition: .2s;
+    /* color: white; */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    
+    border-bottom:2px solid #89ff00;
+}
+.box:hover .content
+{
+    opacity: 1;
+    background: linear-gradient(225deg, #89ff00,);
+}
+
+.box::before , .box::after
+{
+background: linear-gradient(225deg, #89ff00,);
+}
